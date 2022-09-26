@@ -1,24 +1,21 @@
 import logo from './logo.svg';
 import './App.css';
+// import Movieactors from './components/Movieactor';
+import Input from './components/Input';
+// import Movieshow from './components/Movieshow';
+// import Movieactor from './components/Movieactor';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+       <div style={{ backgroundImage: 
+ "url('https://wallpapercave.com/wp/gQSAMah.jpg')"}}>
+      {/* <div style={{ backgroundColor:"brown"}}> */}
+      {/* <Movieactor/> */}
+      <Input/>
+      </div>
+      {/* <Movieshow/> */}
+      </>
   );
 }
 
