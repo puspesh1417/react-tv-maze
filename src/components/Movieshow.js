@@ -4,7 +4,7 @@ import React, { useEffect, useState } from 'react'
 
 export default function Movieshow() {
     const[movie,setmovie]=useState([]);
-    const[text,settext]=useState("moviesname");
+    const[text,settext]=useState("");
     const changetext=(e)=>{
 
 settext(e.target.value);
@@ -30,6 +30,9 @@ useEffect(()=>{
 
   return (
     <>
+    {/* {text.length!==0&&movie.length===0?<h1>not</h1>:(
+      <h1></h1>
+    )} */}
     {/* <input type="radio" id="age1" name="age" value="show"></input>
     <label for="shows">shows</label> */}
     {/* <input type="radio">actors</input> */}
@@ -41,7 +44,9 @@ useEffect(()=>{
   </form>
 </nav>
 {/* <button >fetch movies</button> */}
-
+{text.length!==0&&movie.length===0?<p style={{color:"red",marginLeft:"25px",fontSize:"22px"}}>result not found !</p>:(
+      <h1></h1>
+    )}
 <div className='container'>
     <div className="row mb-5 mx-5">
     {
